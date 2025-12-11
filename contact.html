@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact.c</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+</head>
+<body class="sidebar">
+
+
+        <a href="index.html" class="prompt">
+            <img src="assets/icons/ground.svg" class="nav-icon"> main();
+        </a>
+
+<nav>
+    <ul>
+        <li><a href="projects.html">projects();</a></li>
+        <li><a href="about.html">about();</a></li>
+        <li><a href="tools.html">toolsIUse();</a></li>
+        <li><a href="links.html">links();</a></li>
+        <li><a href="contact.html"class="active">contact();</a></li>
+        <li><a href="ccompiler.html">fakeCompiler();</a></li>
+
+    </ul>
+</nav>
+
+    <div class="container">
+        <h2 class="section-label">// Contact me</h2>
+        <p class="disclaimer"> * Form is for demonstration only - no data is stored or sent.
+</p>
+
+
+<form id="contactForm" novalidate>
+
+    <label for="name">char name[];</label><br>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">char email[];</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="message">char message[];</label><br>
+    <textarea id="message" name="message" rows="5"></textarea><br><br>
+
+    <button type="submit" class="submit-btn">sendMessage();</button>
+</form>
+
+
+
+        <div id="terminal" class="terminal hidden">
+            <pre id="terminal-output" class="terminal-text">&gt; awaiting input…</pre>
+        </div>
+    </div>
+
+<footer class="site-footer" title="// 0 = everything works somehow???">
+
+    <p class="footer-text">
+        return <span class="value">0</span>;
+    </p>
+
+    <a href="https://kopimi.com/?utm_campaign=maindomain&utm_medium=direct&utm_source=http://kopimi.com/kopimi"
+        target="_blank"
+        class="kopimi-link"
+        title="// Kopimi- copy, remix, share">
+        <img src="assets/icons/kopimi.svg"
+            alt="Kopimi symbol: Copy and Share"
+            class="kopimi-icon">
+    </a>
+
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toolsIUse.c</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+</head>
+<body class="sidebar">
+
+
+        <a href="index.html" class="prompt">
+            <img src="assets/icons/ground.svg" class="nav-icon"> main();
+        </a>
+
+<nav>
+    <ul>
+        <li><a href="projects.html">projects();</a></li>
+        <li><a href="about.html">about();</a></li>
+        <li><a href="tools.html" class="active">toolsIUse();</a></li>
+        <li><a href="links.html">links();</a></li>
+        <li><a href="contact.html">contact();</a></li>
+        <li><a href="ccompiler.html">fakeCompiler();</a></li>
+
+    </ul>
+</nav>
+
+<div class="container">
+    <h2 class="section-label">// Languages I Use</h2>
+    <p class="intro">Dynamically generated list created with JavaScript:</p>
+
+    <ul id="languageList" class="skills-list"></ul>
+
+    <h2 class="section-label">// Tool Lookup</h2>
+    <p class="intro">Enter a tool name below to see its description:</p>
+
+    <input type="text" id="toolInput" placeholder="e.g., Arduino">
+    <button id="toolBtn" class="submit-btn">lookupTool();</button>
+
+    <p id="toolOutput" class="intro"></p>
+</div>
+
+<footer class="site-footer" title="// 0 = everything works somehow???">
+
+    <p class="footer-text">
+        return <span class="value">0</span>;
+    </p>
+
+    <a href="https://kopimi.com/?utm_campaign=maindomain&utm_medium=direct&utm_source=http://kopimi.com/kopimi"
+        target="_blank"
+        class="kopimi-link"
+        title="// Kopimi- copy, remix, share">
+        <img src="assets/icons/kopimi.svg"
+            alt="Kopimi symbol: Copy and Share"
+            class="kopimi-icon">
+    </a>
+
+</footer>
+
+
+</body>
+</html>

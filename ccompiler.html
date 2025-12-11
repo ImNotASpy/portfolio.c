@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fakeCompiler.c</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+</head>
+
+<body class="sidebar">
+
+    <a href="index.html" class="prompt">
+        <img src="assets/icons/ground.svg" class="nav-icon"> main();
+    </a>
+
+    <nav>
+        <ul>
+            <li><a href="projects.html">projects();</a></li>
+            <li><a href="about.html">about();</a></li>
+            <li><a href="tools.html">toolsIUse();</a></li>
+            <li><a href="links.html">links();</a></li>
+            <li><a href="contact.html">contact();</a></li>
+            <li><a href="ccompiler.html" class="active">fakeCompiler();</a></li>
+        </ul>
+    </nav>
+
+    <div class="ide-container">
+
+        <div class="ide-toolbar">
+            <button onclick="runFakeCompiler()">▶ Run</button>
+            <button disabled>🐞 Debug</button>
+            <button disabled>⛔ Stop</button>
+            <span class="file-tab">main.c</span>
+        </div>
+
+        <div class="ide-editor">
+<pre id="editorCode">
+#include &lt;stdio.h&gt;
+
+char sayMyName(int);
+
+int main() {
+    int times; 
+    char name[50];
+
+    printf("Enter your name: ");
+    // user input replaced by JS
+
+    printf("Enter number of times to print: ");
+    // user input replaced by JS
+
+    sayMyName(times);
+    return 0;
+}
+
+char sayMyName(int x) {
+    // prints name x times
+}
+</pre>
+        </div>
+
+        <div class="ide-inputs">
+            <label>Name: </label>
+            <input type="text" id="cName">
+            <label>Times: </label>
+            <input type="number" id="cTimes" min="1" max="100" value="5">
+        </div>
+
+        <div class="ide-output">
+<pre id="cOutput">/* compiler output appears here */</pre>
+        </div>
+
+    </div>
+
+    <footer class="site-footer" title="// 0 = everything works somehow???">
+        <p class="footer-text">
+            return <span class="value">0</span>;
+        </p>
+
+        <a href="https://kopimi.com/?utm_campaign=maindomain&utm_medium=direct&utm_source=http://kopimi.com/kopimi"
+            target="_blank"
+            class="kopimi-link"
+            title="// Kopimi- copy, remix, share">
+            <img src="assets/icons/kopimi.svg"
+                alt="Kopimi symbol: Copy and Share"
+                class="kopimi-icon">
+        </a>
+    </footer>
+
+</body>
+</html>
